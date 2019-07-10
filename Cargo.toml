@@ -7,3 +7,11 @@ publish = false
 [dependencies]
 rocket = "0.4.2"
 cargo-watch = "7.2.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+[dependencies.rocket_contrib]
+version = "0.4.2"
+default-features = false
+features = ["handlebars_templates"]
