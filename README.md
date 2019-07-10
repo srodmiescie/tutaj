@@ -2,11 +2,15 @@
 
 # Tutaj
 
-## Usefull links
+## Useful links
 
-[Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/index.html)
+- [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/index.html)
 
-[The Rust Programming Language](https://doc.rust-lang.org/nightly/book/ch01-00-getting-started.html)
+- [The Rust Programming Language](https://doc.rust-lang.org/nightly/book/ch01-00-getting-started.html)
+
+- [Rocket](https://rocket.rs/v0.4/guide/)
+
+- [Diesel](http://docs.diesel.rs/diesel/index.html)
 
 ## Run application
 
