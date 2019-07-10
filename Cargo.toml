@@ -1,8 +1,9 @@
 [package]
-name = "hello_world"
+name = "tutaj"
 version = "0.0.0"
 edition = "2018"
 publish = false
 
 [dependencies]
 rocket = "0.4.2"
+cargo-watch = "7.2.1"
