@@ -1,0 +1,38 @@
+version: "3.7"
+services:
+  server:
+    build: .
+    ports:
+       - "8000:8000"
+    volumes:
+      - .:/app
+    command: bash -c "cargo watch -x run"
+    # depends_on:
+    #   - postgres
+    # networks:
+    #   - backend
+    # environment:
+    #   DATABASE_URL: postgresql://postgres:postgres@db:5432
+    #   RUST_BACKTRACE: 1
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports: 
+      - "5432:5432"
+    # volumes:
+    #   - pgdata
+    # networks:
+    #   - backend
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+# networks:
+#   backend:
+
+# volumes:
+#   pgdata:
